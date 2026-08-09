@@ -18,7 +18,8 @@ $(function() {
 	$.ajax({
 	    type: 'POST',
 	    url: $(form).attr('action'),
-	    data: formData
+	    data: formData,
+		dataType: 'json',
 	}).done(function(response) {
 	  
 	    // Making the formMessages div to have the 'success' class
